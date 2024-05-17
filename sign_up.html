@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Authentication</title>
+    <link rel="stylesheet" href="pro.css" />
+  </head>
+  <style>
+    /* Internal CSS for Sign Up Box */
+    .box.signup {
+      /* Adjust the width and height of the main div element */
+      width: 400px;
+      height: 550px;
+      border: 2px solid #45f3ff;
+    }
+
+    .box.signup form {
+      /* Add your specific styles for the Sign Up form */
+      padding: 40px 30px;
+    }
+
+    .box.signup form input[type="submit"] {
+      /* Add your specific styles for the Sign Up button */
+      background: #d9138a;
+    }
+
+    .box.signup form .links {
+      /* Add your specific styles for the Sign Up links */
+      margin-top: 30px;
+    }
+    .back-to-home {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-decoration: none;
+      color: #45f3ff;
+      background-color: #1c1c1c;
+      border: 2px solid #45f3ff;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+    .back-to-home:hover {
+      background-color: #45f3ff;
+      color: #1c1c1c;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <a href="home.html" class="back-to-home">&#9665; Back to Home</a>
+      <div class="box signup">
+        <form
+          id="signUpForm"
+          action="#"
+          method="post"
+          onsubmit="showSignUpAlert(event)"
+        >
+          <h2>Sign Up</h2>
+          <div class="inputbox">
+            <input type="text" required />
+            <span>Full Name</span>
+            <i></i>
+          </div>
+          <div class="inputbox">
+            <input type="password" required />
+            <span>Password</span>
+            <i></i>
+          </div>
+          <div class="inputbox">
+            <input type="password" required />
+            <span>Confirm Password</span>
+            <i></i>
+          </div>
+          <div class="links">
+            <a href="#" class="redirect-link">Already have an account?</a>
+            <a href="./login_page.html" class="redirect-link">Login</a>
+          </div>
+          <input type="submit" value="Sign Up" class="login-button" />
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function showSignUpAlert(event) {
+        alert("Signed up successfully!");
+        // You can add additional logic here, such as sending data to the server
+        event.preventDefault(); // Prevents the form from submitting
+        return false;
+      }
+    </script>
+  </body>
+</html>

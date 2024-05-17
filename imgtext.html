@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Learning Website</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .content-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .text-container {
+        margin-left: 20px; /* Adjust the margin as needed */
+      }
+
+      @media (max-width: 768px) {
+        .content-container {
+          flex-direction: column;
+        }
+
+        .text-container {
+          margin-left: 0;
+          margin-top: 20px; /* Adjust the margin as needed */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content-container">
+      <img src="your-image.jpg" alt="Image Description" />
+      <div class="text-container">
+        <p>
+          Your text paragraph goes here. This is some educational content for
+          the learning website.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

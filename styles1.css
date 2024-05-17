@@ -1,0 +1,124 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Apply a box-sizing border-box to all elements */
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #3498db; /* Change this color to your desired shade of blue */
+    background-image: url(bgim.jpg);
+    background-repeat: no-repeat;
+    background-size: 1536px 731px;
+    color: #333; /* Text color */
+  }
+  
+  .header {
+    background-color: #fff; /* Header background color */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }
+  
+  .left01 p {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .right .btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .right .btn:hover {
+    background-color: #555; /* Darken the background on hover */
+  }
+  
+  .navbar {
+    display: flex;
+    margin: 15px 0;
+  }
+  
+  .navbar li {
+    margin-right: 20px;
+    list-style: none;
+  }
+  
+  .navbar li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar li a:hover {
+    color: #3498db; /* Change color on hover */
+  }
+  
+  .sec {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .sec h1 {
+    font-size: 72px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .p1 p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .btn2 .bt3 {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .btn2 .bt3:hover {
+    background-color: #2574a9; /* Darken the background on hover */
+  }
+  
+  .bimg img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .head3, .para3 {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .head3 h1 {
+    font-size: 36px;
+    color: #333;
+  }
+  
+  .para3 p {
+    font-size: 16px;
+    color: #555;
+  }
+  

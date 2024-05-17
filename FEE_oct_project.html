@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background: linear-gradient(90deg, #007BFF, #00BFFF);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            /* Add box shadow here */
+        }
+
+        h1 {
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+
+        section.course-listings {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .course-card {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            /* Add box shadow here */
+        }
+
+        .course-card h3 {
+            margin-top: 0;
+        }
+
+        .course-card p {
+            margin: 10px 0;
+        }
+
+        .course-card a {
+            text-decoration: none;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .course-card a:hover {
+            background-color: #0056b3;
+        }
+
+
+        section.user-profile {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* .course-card h3,
+        .course-card p,
+        .course-card a {
+            text-align: center;
+            /* Center-align text within .course-card elements */
+         */
+
+        .user-info {
+            text-align: center;
+        }
+
+        .user-info img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .user-info h3 {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        .user-info p {
+            margin: 5px 0;
+        }
+
+        .progress {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .progress-bar {
+            background-color: #ddd;
+            border-radius: 5px;
+            height: 20px;
+            margin-bottom: 10px;
+        }
+
+        .progress-value {
+            background-color: #007BFF;
+            border-radius: 5px;
+            height: 100%;
+        }
+
+        footer {
+            background: linear-gradient(90deg, #007BFF, #00BFFF);
+            text-align: center;
+            padding: 10px 0;
+            color: #fff;
+        }
+
+        /* Additional Styles */
+        .featured-courses {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-us,
+        .contact-us {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to E-Learning Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Courses">Courses</a></li>
+                <li><a href="#Profile">Profile</a></li>
+                <li><a href="#Logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="course-listings">
+        <div class="course-card">
+            <h3>Introduction to Programming</h3>
+            <p>Learn the basics of programming with Python. This course covers variables, data types, and control
+                structures.</p>
+            <p>Instructor: Dr. Ashima</p>
+            <p>Duration: 6 weeks</p>
+            <a href="#">View Details</a>
+        </div>
+
+        <div class="course-card">
+            <h3>FEE</h3>
+            <p>Explore the world of front end engineering(FEE). Topics include HTML, CSS, and JavaScript.</p>
+            <p>Instructor: Dr. Amandeep Kaur</p>
+            <p>Duration: 12 weeks</p>
+            <a href="#">View Details</a> <!-- Updated link -->
+        </div>
+    </section>
+
+
+    <section class="user-profile">
+        <center>
+            <h2>User Profile</h2>
+        </center>
+        <div class="user-info">
+            <!-- <img src="user-avatar.jpg" alt="User Avatar"> -->
+            <h3>abc</h3>
+            <p>Email: abc@gmail.com</p>
+        </div>
+        <div class="progress">
+            <h3>Course Progress</h3>
+            <div class="progress-bar">
+                <div class="progress-value" style="width: 54%;"></div>
+            </div>
+            <p>54% completed</p>
+        </div>
+    </section>
+
+    <section class="featured-courses">
+        <h2>Featured Courses</h2>
+        <div class="course-card">
+            <h3>C++</h3>
+            <p>Master C++ programming, from variables and data types to advanced control structures and object-oriented
+                concepts.</p>
+            <p>Instructor: Code With Harry</p>
+            <p>Duration: 16 weeks</p>
+            <a href="#">View Details</a>
+        </div>
+
+        <div class="course-card">
+            <h3>Bootstrap</h3>
+            <p>Discover the power of Bootstrap for creating responsive and stylish web designs with ease.</p>
+            <p>Instructor: Dr. Angela Yu</p>
+            <p>Duration: 5 weeks</p>
+            <a href="#">View Details</a>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <h2>About Us</h2>
+        <p>We are a leading online learning platform dedicated to providing high-quality educational content to learners
+            around the world. Our mission is to make learning accessible and enjoyable for everyone.</p>
+    </section>
+
+    <section class="contact-us">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, feel free to reach out to our support team at <a
+                href="mailto:support@example.com">support@gmail.com</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 E-Learning Platform</p>
+    </footer>
+</body>
+
+</html>

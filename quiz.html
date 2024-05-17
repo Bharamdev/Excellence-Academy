@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.html.css">
+  <title>Bonus Quiz</title>
+</head>
+<style>
+  .back-to-home {
+     display: inline-block;
+     padding: 10px 20px;
+     font-size: 16px;
+     text-decoration: none;
+     color: #45f3ff;
+     background-color: #1c1c1c;
+     border: 2px solid #45f3ff;
+     border-radius: 8px;
+     transition: background-color 0.3s, color 0.3s;
+     position: absolute;
+     top: 10px;
+     left: 10px;
+   }
+
+   .back-to-home:hover {
+     background-color: #45f3ff;
+     color: #1c1c1c;}
+</style>
+<body>
+  <div class="container">
+    <a href="home.html" class="back-to-home">&#9665; Back to Home</a>
+  <div class="container">
+    <div class="quiz-container">
+      <h1 class="text-center">🚀 Bonus Quiz 🚀</h1>
+      <div id="timer-container" class="text-center">5:00</div>
+      <div id="question-container" class="mt-4">
+        <!-- Questions will be dynamically loaded here -->
+      </div>
+      <div id="progress-bar-container" class="mt-4">
+        <div class="progress">
+          <div id="progress-bar" class="progress-bar bg-success" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <button id="submit-btn" class="btn btn-warning">Next Question</button>
+      </div>
+      <div id="result-container" class="text-center mt-4">
+        <!-- Results will be displayed here -->
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="quiz.js"></script>
+</body>
+</html>

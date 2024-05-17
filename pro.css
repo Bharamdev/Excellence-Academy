@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    to right,
+    #001f3f,
+    #003366
+  ); /* Navy blue gradient background */
+}
+
+.back-to-home {
+  position: absolute;
+  top: 5px; /* Adjust the top value for the desired position */
+  left: 10px;
+  text-decoration: none;
+  color: #45f3ff;
+  font-weight: 500;
+}
+
+.box {
+  position: relative;
+  margin-top: 30px; /* Adjust this margin based on your design preferences */
+  width: 370px;
+  height: 450px;
+  background: #1c1c1c;
+  border-radius: 50px 5px;
+  overflow: hidden;
+}
+.box::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 370px;
+  height: 450px;
+  background: linear-gradient(60deg, transparent, #45f3ff, #45f3ff);
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 370px;
+  height: 450px;
+  background: linear-gradient(60deg, transparent, #d9138a, #d9138a);
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.box form {
+  position: absolute;
+  inset: 2px;
+  background: #28292d;
+  padding: 30px 30px;
+  border-radius: 50px 5px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.box form h2 {
+  color: white; /* Set the color to white */
+  font-size: 35px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.box form .inputbox {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  z-index: 10;
+}
+
+.box form .inputbox input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.box form input[type="submit"] {
+  border: none;
+  outline: none;
+  padding: 5px;
+  background: #45f3ff;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 90px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+.box form input[type="submit"]:active {
+  background: linear-gradient(90deg, #45f3ff, #d9138a);
+  opacity: 0.8;
+}
+
+.box form .inputbox span {
+  position: absolute;
+  left: 0;
+  padding: 20px 10px 10px;
+  pointer-events: none;
+  color: #8f8f8f;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+
+.box form .inputbox input:valid ~ span,
+.box form .inputbox input:focus ~ span {
+  color: #fff;
+  font-size: 0.75em;
+  transform: translateY(-34px);
+}
+
+.box form .inputbox i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #45f3ff;
+  border-radius: 4px;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 9;
+}
+
+.box form .inputbox input:valid ~ i,
+.box form .inputbox input:focus ~ i {
+  height: 44px;
+}
+
+.box form .links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box form .links a {
+  margin: 25px 0;
+  font-size: 1em;
+  color: #8f8f8f;
+  text-decoration: none;
+}
+
+.box form .links a:hover,
+.box form .links a:nth-child(2) {
+  color: #45f3ff;
+}
+
+/* Style for the Sign Up link */
+.redirect-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #45f3ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.redirect-link:hover {
+  color: #d9138a;
+}

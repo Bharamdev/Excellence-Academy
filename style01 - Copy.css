@@ -1,0 +1,131 @@
+body{
+    /* background-color: black; */
+    color: white;
+    /* position: absolute; */
+    box-sizing: border-box;
+    background-image: url(bgim.jpg);
+    background-repeat: no-repeat;
+    padding: 0px;
+    margin: 0px;
+
+    /* background-size: 100%; */
+    /* background-size: 1482px 432px; */
+}
+/* .left img{
+    display: inline-block;
+    position: absolute;
+    margin: -10px;
+    height: 50px;
+    width: 70px;} */
+
+
+.left01 p{
+    position: absolute;
+  display: inline-block;
+  margin: 4px 0px;
+  font-size: 30px;
+  padding: 0px 0px;
+  color: black;
+  
+}
+.mid{
+    display: inline-block;
+  position: absolute;
+  margin: 6px 336px;
+}
+.mid input{
+    width: 700px;
+    height: 30px;
+    border: 2px solid gray;
+    border-radius: 19px;
+}
+.right{
+    position: absolute;
+    display: inline-block;
+    right: 14px;
+    top: 23px;
+}
+.btn{
+  margin: -11px 6px;
+  width: 77px;
+  height: 37px;
+  color: black;
+  font-size: 15px;
+  border-radius: 9px;
+}
+.btn:hover{
+    background-color: blue;
+}
+.navigation{
+  
+  position: absolute;
+  margin: 54px -8px;
+  background-color: white;
+  width: 100%;
+  border-radius: 30px;
+}
+.ulist{
+  margin: 1px -47px;
+}
+.ulist li {
+  display: inline-block;
+  padding: 8px 22px;
+  font-size: 21px;
+}
+.ulist li a{
+  /* display: inline-block; */
+  text-decoration: none;
+  color: black;
+}
+.ulist li a:hover{
+  color: white;
+  background-color: blue;
+}
+section{
+  position: absolute;
+}
+.sec1{
+  margin: 129px 0px;
+}
+.h h2{
+  font-size: 36px;
+  
+}
+.l2 li{
+  font-size: 24px;
+}
+.box{
+  background-color: #8c13a5;
+  height: 246px;
+  width: 300px;
+  border-radius: 22px;
+  display: inline-block;
+  margin: 5px 14px;
+}
+.box div{
+  text-align: center;
+}
+.box img{
+  height: 160px;
+  width: 160px;
+  border-radius: 84px;  
+}
+.about{
+  color: black;
+}
+#box1{
+  margin: 2px 3px;
+
+}
+/* .sec3{
+  display: flex;
+}
+/* Section css */
+/* .sec{
+  position: absolute;
+  margin: 425px 0px;
+}
+secp{
+  color: red;
+  font-size: 32px;
+}  */
